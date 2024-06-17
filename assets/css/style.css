@@ -269,9 +269,9 @@ header .headwe-nav {
       color: #777474;
       border-right: 1px solid #7774745c; }
       header .headwe-nav .nav-div .navbar-nav .nav-item .nav-link:hover {
-        color: #f78d15; }
+        color:  #650000; }
     header .headwe-nav .nav-div .navbar-nav .nav-item .active {
-      color: #f78d15; }
+      color:  #650000; }
   header .headwe-nav .social-div ul {
     float: right; }
     header .headwe-nav .social-div ul li {
@@ -421,7 +421,7 @@ header .headwe-nav {
         flex-grow: 1; }
         .about-us .diag-ro .about-diag .tex h5 {
           font-weight: 600;
-          color: #f78d15; }
+          color: #650000; }
         .about-us .diag-ro .about-diag .tex p {
           text-transform: uppercase;
           font-size: .8rem; }
@@ -435,29 +435,61 @@ header .headwe-nav {
 /* =================== Header Style Starts Here =================== */
 .services {
   padding: 50px;
-  background-color: #FFF; }
-  @media screen and (max-width: 940px) {
-    .services {
-      padding: 30px 10px; } }
-  .services .service-row .servic-col {
-    text-align: center; }
-    .services .service-row .servic-col .servic-round {
-      width: 90px;
-      height: 90px;
-      background-color: #f78d15;
-      color: #FFF;
-      float: none;
-      margin: auto;
-      border-radius: 50px;
-      margin: auto;
-      text-transform: uppercase;
-      margin-bottom: 30px;
-      border: 4px solid #FFF;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-      .services .service-row .servic-col .servic-round p {
-        padding-top: 33px;
-        font-weight: 600;
-        font-size: .8rem; }
+  background-color: #FFF;
+}
+
+@media screen and (max-width: 940px) {
+  .services {
+    padding: 30px 10px;
+  }
+}
+
+.services .service-row .servic-col {
+  text-align: center;
+}
+
+.services .service-row .servic-col .servic-round {
+  width: 250px; /* Increased width */
+  height: 100px; /* Increased height */
+  background-color:black;
+  color: #FFF;
+  float: none;
+  margin: auto;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  border: 4px solid #FFF;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px; /* Smaller value for rounded corners, or 0 for sharp corners */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.services .service-row .servic-col .servic-round:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.services .service-row .servic-col .servic-round i {
+  font-size: 2rem; /* Adjust the icon size as needed */
+  margin-bottom: 10px;
+}
+
+.services .service-row .servic-col .servic-round p {
+  font-weight: 600;
+  font-size: 1rem; /* Adjusted font size */
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
 /* =================== Causes Style Starts Here =================== */
 .causes {
@@ -475,7 +507,7 @@ header .headwe-nav {
     .causes .cuses-row .caus-img img {
       width: 120px;
       border-radius: 50%;
-      border: 5px solid #ff5722;
+      border: 5px solid  #650000;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       margin-bottom: 20px; }
   .causes .cuses-row .caus-info .left-info {
@@ -497,8 +529,8 @@ header .headwe-nav {
     text-align: center; }
     .causes .cuses-row .donat-btn .btn {
       width: 60%;
-      background-color: #f78d15;
-      border: #f78d15;
+      background-color: #650000;
+      border:  #650000;
       text-transform: uppercase;
       font-weight: 600; }
       .causes .cuses-row .donat-btn .btn i {
@@ -546,7 +578,7 @@ header .headwe-nav {
       .we-are-making .text-part .count .count-sing i {
         font-size: 2rem;
         margin-bottom: 20px;
-        color: #f78d15; }
+        color:  #650000; }
       .we-are-making .text-part .count .count-sing h2 {
         color: #ff5722; }
 
@@ -638,7 +670,7 @@ header .headwe-nav {
 
 .footer-ablove {
   padding: 30px;
-  background-color: #ff5722;
+  background-color:  #650000;
   color: #FFF;
   font-size: 1.5rem; }
 
