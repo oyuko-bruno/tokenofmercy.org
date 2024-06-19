@@ -37,3 +37,25 @@ $( document ).ready(function() {
 
 
 });
+
+
+function changeReadMore(button) {
+    const mybox = button.closest('.mybox');
+    const mycontent = mybox.querySelector('.mybox-more');
+    const spanMore = mybox.querySelector('.span-more');
+
+    if (mycontent.style.display === 'none' || mycontent.style.display === '') {
+        mycontent.style.display = 'inline';
+        spanMore.style.display = "none";
+        button.textContent = 'Read Less';
+    } else {
+        mycontent.style.display = 'none';
+        button.textContent = 'Read More';
+        spanMore.style.display = "inline";
+    }
+}
+
+// Add a document ready function to set initial state
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.mybox-more').forEach(el => el.style.display = 'none');
+});
