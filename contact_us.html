@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Toke Of Marcy | tokenofmercy.org</title>
+    <title>Contact Us | Token Of Mercy</title>
     <link rel="shortcut icon" href="assets/images/token of marcy.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/fav.jpg">
@@ -88,12 +88,6 @@
                              <li>
                                 <a href="https://www.instagram.com/tokenofmercy01/"><i class="fab fa-instagram"></i></a> 
                              </li>
-                             <!--<li>
-                                 <i class="fab fa-linkedin"></i>
-                             </li>
-                             <li>
-                                 <i class="fab fa-pinterest-square"></i>
-                             </li>-->
                         </ul>
                     </div>
                 </div>
@@ -125,74 +119,52 @@
 
         
     </div>
-
     <div class="row contact-rooo no-margin">
         <div class="container">
             <div class="row">
-
-
                 <div style="padding:20px" class="col-sm-7">
-                    <h2 >Contact Form</h2> <br>
-                    <div class="row cont-row">
-                        <div  class="col-sm-3"><label>Enter Name </label><span>:</span></div>
-                        <div class="col-sm-8"><input type="text" placeholder="Enter Name" name="name" class="form-control input-sm"  ></div>
-                    </div>
-                    <div  class="row cont-row">
-                        <div  class="col-sm-3"><label>Email Address </label><span>:</span></div>
-                        <div class="col-sm-8"><input type="text" name="name" placeholder="Enter Email Address" class="form-control input-sm"  ></div>
-                    </div>
-                    <div  class="row cont-row">
-                        <div  class="col-sm-3"><label>Mobile Number</label><span>:</span></div>
-                        <div class="col-sm-8"><input type="text" name="name" placeholder="Enter Mobile Number" class="form-control input-sm"  ></div>
-                    </div>
-                    <div  class="row cont-row">
-                        <div  class="col-sm-3"><label>Enter Message</label><span>:</span></div>
-                        <div class="col-sm-8">
-                            <textarea rows="5" placeholder="Enter Your Message" class="form-control input-sm"></textarea>
+                    <h2>Contact Form</h2> <br>
+                    <form id="contactForm" method="post" action="send_email.php">
+                        <div class="row cont-row">
+                            <div class="col-sm-3"><label for="name">Enter Name</label><span>:</span></div>
+                            <div class="col-sm-8"><input type="text" id="name" name="name" placeholder="Enter Name" class="form-control input-sm" required></div>
                         </div>
-                    </div>
-                    <div style="margin-top:10px;" class="row">
-                        <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
-                        <div class="col-sm-8">
-                            <button class="btn btn-success btn-sm">Send Message</button>
+                        <div class="row cont-row">
+                            <div class="col-sm-3"><label for="email">Email Address</label><span>:</span></div>
+                            <div class="col-sm-8"><input type="email" id="email" name="email" placeholder="Enter Email Address" class="form-control input-sm" required></div>
                         </div>
-                    </div>
+                        <div class="row cont-row">
+                            <div class="col-sm-3"><label for="mobile">Mobile Number</label><span>:</span></div>
+                            <div class="col-sm-8"><input type="text" id="mobile" name="mobile" placeholder="Enter Mobile Number" class="form-control input-sm" required></div>
+                        </div>
+                        <div class="row cont-row">
+                            <div class="col-sm-3"><label for="message">Enter Message</label><span>:</span></div>
+                            <div class="col-sm-8">
+                                <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" class="form-control input-sm" required></textarea>
+                            </div>
+                        </div>
+                        <div style="margin-top:10px;" class="row">
+                            <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+                            <div class="col-sm-8">
+                                <button type="submit" id="submitBtn" class="btn btn-success btn-sm">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-sm-5">
-
                     <div style="margin:50px" class="serv">
-
-
-
-
-
                         <h2 style="margin-top:10px;">Address</h2>
-
-                        Street name, <br>
-                        23/H-2, Building name<br>
                         Nyalenda<br>
-                        Phone:<br>
-                        Email:<br>
-                        Website:www.tokenofmercy.org
-
+                        Phone: +254725 994453<br>
+                        Email: info@tokenofmercy.org<br>
+                        Website: www.tokenofmercy.org
                         <br>
-
-
-
-
-
-
-
                     </div>
-
-
                 </div>
-
             </div>
         </div>
-
     </div>
-
+    
 
 
 
@@ -201,7 +173,7 @@
     <div class="footer-ablove">
         <div class="container">
             <div class="row">
-                <p>Looking For Exclusive Services?
+                <p>Looking To Donate?
                     <a href="donation.html"><button class="btn btn-default">Donate Now</button></a>
                 </p>
             </div>
@@ -211,14 +183,14 @@
         <div class="container">
             <div class="footer-top row">
                 <div class="col-md-4 foot-logo">
-                    <h2>Token of Marcy</h2>
+                    <h2>Token of Mercy</h2>
                 </div>
                 <div class="col-md-8 foot-addr">
                     <p></p>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Antonya Street, 23/H-2, Nyalenda, Kisumu, Kenya </li>
-                        <li><i class="fas fa-mobile-alt"></i> +254997987665  </li>
-                        <li><i class="far fa-envelope"></i> support@smarteyeapps.com </li>
+                        <li><i class="fas fa-map-marker-alt"></i>  Nyalenda, Kisumu, Kenya </li>
+                        <li><i class="fas fa-mobile-alt"></i> +254725 994453  </li>
+                        <li><i class="far fa-envelope"></i> info@tokenofmercy.org </li>
                     </ul>
                 </div>
             </div>
@@ -227,11 +199,30 @@
                     <div class="fotter-coo">
                         <h5>IMPORTANT LINKS</h5>
                         <ul>
-                            <li><i class="fas fa-caret-right"></i> ABOUT US</li>
-                            <li><i class="fas fa-caret-right"></i> COMPANY PROFILE</li>
-                            <li><i class="fas fa-caret-right"></i> OUR SERVICES</li>
-                            <li><i class="fas fa-caret-right"></i> CONTACT US</li>
-                            <li><i class="fas fa-caret-right"></i> READ BLOG</li>
+                            <li>
+                                <a href="./about_us.html" style="color: white;">
+                                  <i class="fas fa-caret-right" style="color: white;"></i> ABOUT US
+                                </a>
+                            </li>
+                              
+                            <li>
+                                <a href="./gallary.html" style="color: white;">
+                                  <i class="fas fa-caret-right" style="color: white;"></i> OUR GALLERY
+                                </a>
+                            </li>
+                              
+                            <li>
+                                <a href="./contact_us.html" style="color: white;">
+                                  <i class="fas fa-caret-right" style="color: white;"></i> CONTACT US
+                                </a>
+                            </li>
+                              
+                            <li>
+                                <a href="./blog.html" style="color: white;">
+                                  <i class="fas fa-caret-right" style="color: white;"></i> READ BLOG
+                                </a>
+                            </li>
+                              
                         </ul>
                     </div>
                     
@@ -240,11 +231,23 @@
                     <div class="fotter-coo">
                         <h5>GLOBAL UPDATE NEWS</h5>
                         <ul>
-                            <li><i class="fas fa-caret-right"></i> 100 CHILDREN RESCUE FROM WAR ZONE</li>
-                            <li><i class="fas fa-caret-right"></i> THR FRESH HOUSE CHILD</li>
-                            <li><i class="fas fa-caret-right"></i> CREATE AWARENESS IN EDUCATON</li>
-                            <li><i class="fas fa-caret-right"></i> WHAT HAPPEN WHEN WE LIVE!</li>
-                            <li><i class="fas fa-caret-right"></i> READ BLOG</li>
+                            <li>
+                                <a href="https://www.positiveaction.net/blog/teaching-self-awareness-to-students" style="color: white;">
+                                  <i class="fas fa-caret-right" style="color: white;"></i> CREATE AWARENESS IN EDUCATION
+                                </a>
+                            </li>
+                              
+                            <li>
+                                <a href="https://www.insightforliving.ca/read/articles/what-happens-when-we-live-god-s-way" style="color: white;">
+                                  <i class="fas fa-caret-right" style="color: white;"></i> WHAT HAPPENS WHEN WE LIVE!
+                                </a>
+                            </li>
+                              
+                            <li>
+                                <a href="./blog.html" style="color: white;">
+                                  <i class="fas fa-caret-right" style="color: white;"></i> READ BLOG
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     
@@ -279,16 +282,14 @@
         </div>
     </footer>
 
-     <div class="copy">
+    <div class="copy">
         <div class="container">
-            <a href="https://www.smarteyeapps.com/">2024 &copy; All Rights Reserved | </a>
+            <a href="https://www.linkedin.com/in/collins-yogo-73a562201/">2024 &copy; All Rights Reserved  </a>
 
             <span>
-                <a><i class="fab fa-github"></i></a>
-                <a><i class="fab fa-google-plus-g"></i></a>
-                <a><i class="fab fa-pinterest-p"></i></a>
-                <a><i class="fab fa-twitter"></i></a>
-                <a><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/tokenofmercy01/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/tokenofmercy"> <i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100067397432124"> <i class="fab fa-facebook-square"></i></a>
         </span>
         </div>
 
@@ -302,5 +303,34 @@
     <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
     <script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var form = this;
+            var formData = new FormData(form);
+    
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                // Display success message or handle the response as needed
+                alert(data); // Replace with your preferred way of displaying success message
+                form.reset(); // Optionally clear the form
+            })
+            .catch(error => {
+                // Display error message or handle the error as needed
+                console.error('There has been a problem with your fetch operation:', error);
+                alert("Failed to send message. Please try again later.");
+            });
+        });
+    </script>
+    
 </html>
 
